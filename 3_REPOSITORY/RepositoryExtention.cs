@@ -14,7 +14,6 @@ namespace _3_REPOSITORY
     {
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            //services.AddScoped<IDataSource, DataSource>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IChildRepository, ChildRepository>();
             return services;
