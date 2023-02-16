@@ -18,12 +18,6 @@ namespace _3_REPOSITORY.Entities
         public DateTime Dateofbirth { get; set; }
         public EGender Gender { get; set; }
         public EHMO HMO { get; set; }
-
-
-        //public int Status { get; set; }
-        // 1 parent
-        //2 child
-        //public int FamilyCode { get; set; }
-
+        public List<Child> children { get; set; }
     }
 }
