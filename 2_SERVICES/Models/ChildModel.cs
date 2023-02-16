@@ -13,7 +13,5 @@ namespace _2_SERVICES.Models
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
         public string PersonalNumber { get; set; }
-        public int ParentId { get; set; }
-        public User Parent { get; set; }
     }
 }
