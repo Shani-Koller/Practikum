@@ -16,5 +16,6 @@ namespace _2_SERVICES.Models
         public DateTime Dateofbirth { get; set; }
         public EGender Gender { get; set; }
         public EHMO HMO { get; set; }
+        public List<Child> children { get; set; }
     }
 }
