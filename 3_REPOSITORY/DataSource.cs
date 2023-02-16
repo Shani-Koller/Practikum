@@ -11,14 +11,11 @@ namespace _3_REPOSITORY
 {
     public class DataSource:DbContext, IDataSource
     {
-        //public DbSet<User> users { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        //public DbSet<Child> children { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Microsoft.EntityFrameworkCore. DbSet<User> users { get; set; }
         public Microsoft.EntityFrameworkCore.DbSet<Child> children { get; set; }
 
-        //public virtual DbSet<User> users { get; set; }
-        //public virtual DbSet<Child> children { get; set; }
+      
         public DataSource(  )
         {
 
@@ -32,15 +29,7 @@ namespace _3_REPOSITORY
             optionsBuilder.UseSqlServer(@"Data Source=sqlsrv;Initial Catalog=#ShaniKollerProgect;Integrated Security=True; TrustServerCertificate=True");
         }
 
-        //Task<int> IDataSource.SaveChanges()
-        //{
-        //    return base.SaveChanges();
-        //}
-
-        //public override Task<int> SaveChanges()
-        //{
-        //    return base.SaveChanges();
-        //}
+        
 
     }
 }
