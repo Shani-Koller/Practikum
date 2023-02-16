@@ -39,23 +39,13 @@ namespace _1_WEB_API.Controllers
         [HttpPost]
         public async Task<ChildModel> Post([FromBody] ChildModel postChild)
         {
-       
-            
             ChildModel newChild = new ChildModel();
             newChild.Id = postChild.Id;
             newChild.Name = postChild.Name;
-            newChild.Parent = postChild.Parent;
-            newChild.ParentId = postChild.ParentId;
             newChild.PersonalNumber = postChild.PersonalNumber;
             newChild.BirthDate = postChild.BirthDate;
             return await _child.AddAsync(newChild);
         }
-
-        //// PUT api/<ChildrenController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
 
         // DELETE api/<ChildrenController>/5
         [HttpDelete("{id}")]
