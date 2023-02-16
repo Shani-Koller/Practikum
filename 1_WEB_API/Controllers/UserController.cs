@@ -47,14 +47,9 @@ namespace _1_Gui.Controllers
             newUser.Gender=postUser.Gender; 
             newUser.HMO=postUser.HMO;
             newUser.Dateofbirth=postUser.Dateofbirth;
+            newUser.children=postUser.children; 
             return await _user.AddAsync(newUser);
-        }
-
-        // PUT api/<UserController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
+        
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
