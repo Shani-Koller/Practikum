@@ -23,10 +23,6 @@ builder.Services.AddScoped<IApplicationBuilder, ApplicationBuilder>();
 builder.Services.AddServices();
 builder.Services.AddAutoMapper(typeof(Mapping));
 
-//builder.Services.AddRepoDependencies();
-//builder.Services.AddScoped<IUserService, UserService>();
-//builder.Services.AddScoped<IChildService, ChildService>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
